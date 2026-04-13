@@ -121,3 +121,25 @@ console.log(typeof valueNumber);
 
 
 
+// ***************************  Operations  ***********************
+
+
+let value = 7
+let negValue = -value
+// console.log(negValue); // Output: -7
+
+console.log (2 + 3);
+console.log(2*2);
+console.log(11/2);
+console.log(11%3);
+console.log(2-3);
+
+
+
+console.log(2**3);
+
+
+let A = "Sudhanshu"
+let B = " Verma"
+let C = A + B
+console.log(C);
