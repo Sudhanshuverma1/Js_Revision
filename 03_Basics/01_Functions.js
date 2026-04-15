@@ -37,4 +37,21 @@ function loginUserMessage(username) {
     }
     return `You are logged in as ${username} just now.`;
 }
-console.log(loginUserMessage(''))
+//console.log(loginUserMessage(''))
+
+function calculateCartPrice(...num1){
+    return num1
+}
+
+//console.log(calculateCartPrice(100, 200, 300));
+
+const user = {
+    name: 'Sudhanshu',
+    age: 30,
+    email: 'xxx@gmail.com',    
+}
+
+function handleObject(anyobj) {
+    console.log(`Username is ${anyobj.name} and email is ${anyobj.email}`);
+}
+//handleObject(user)
