@@ -55,3 +55,41 @@ function handleObject(anyobj) {
     console.log(`Username is ${anyobj.name} and email is ${anyobj.email}`);
 }
 //handleObject(user)
+
+/* Functions in JavaScript are reusable blocks of code designed to perform specific tasks. They allow you to organize, reuse, and modularize code. It can take inputs, perform actions, and return outputs.
+
+
+Understanding Functions
+In functions, parameters are placeholders defined in the function, while arguments are the actual values you pass when calling the function.
+
+Example:
+function greet(name) {   // 'name' is a parameter
+  console.log("Hello " + name);
+}
+​
+greet("Alice");  // "Alice" is the argument
+--- Parameter: name (placeholder inside the function).
+--- Argument: "Alice" (real value given at call time).
+
+## Default Parameters
+Default parameters are used when no argument is provided during the function call.
+If no value is passed, the function automatically uses the default value.
+
+function greet(name = "Guest") {
+  console.log("Hello, " + name);
+}
+​
+greet();
+greet("Aman");
+
+## Return Statement
+The return statement is used to send a result back from a function.
+When return executes, the function stops running at that point.
+The returned value can be stored in a variable or used directly.
+
+function add(a, b) {
+  return a + b; // returns the sum
+}
+​
+let result = add(5, 10);
+console.log(result);*/
