@@ -19,3 +19,5 @@ const arr = [10,20,20,111,]
 console.log (arr);
 
 console.log(arr.map(x => x*2))
+
+//map
