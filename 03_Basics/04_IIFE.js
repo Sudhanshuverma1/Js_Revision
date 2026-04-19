@@ -42,7 +42,9 @@ function addNum( num1, num2){
 let result1 = addNum(val1,val2)
 let result2 = addNum (10,3)
 
+// ---- anonymous function
 
 setTimeout(function () {
   console.log("Hi");
 }, 1000);
+
