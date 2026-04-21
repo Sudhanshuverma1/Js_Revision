@@ -124,3 +124,20 @@ while (i <= 5) {
     console.log(i);
     i++;
 }
+
+/* 
+## 7: Using Do-While loop
+The do-while loop is similar to the while loop, except that the condition is evaluated after the execution of the loop's body. This means the code block will execute at least once, even if the condition is false.
+
+Syntax
+
+do {
+    // code block
+} while (condition); */
+
+let i = 1;
+
+do {
+    console.log(i);
+    i++;
+} while (i <= 5);
