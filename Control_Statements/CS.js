@@ -90,3 +90,37 @@ condition ? value if true : value if false*/
 let q = 10;
 let result = q >= 0 ? "Positive" : "Negative";
 console.log(`The number is ${result}.`);
+
+
+/*
+## 5: Using For loop
+In this approach, we are using for loop in which the execution of a set of instructions repeatedly until some condition evaluates and becomes false
+
+# Syntax
+
+for (statement 1; statement 2; statement 3) {
+    // Code here . . .
+}*/
+
+for (let i = 0; i <= 10; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+};
+
+/*
+## 6: Using While loop
+The while loop repeats a block of code as long as a specified condition is true.
+
+Syntax
+
+while (condition) {
+    // code block
+} */
+
+    let i = 1;
+
+while (i <= 5) {
+    console.log(i);
+    i++;
+}
