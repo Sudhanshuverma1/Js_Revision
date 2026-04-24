@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUR PHIRRR HUM GYB HO GYE </title>
+    <!-- <link rel="stylesheet" href=""> -->
+</head>
+<body style="background-color: black; color: azure;">
+    <ul class="language">
+        <li>Java Script </li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName) {
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').
+        appendChild(li)
+    }
+    addLanguage("Python")
+    addLanguage("golang")
+    addLanguage("Azure")
+
+
+    function addOptiLanguage(langName) {
+        const li = document.createElement('li');
+        //const addText = document.createTextNode(langName)
+        li.appendChild(document.createTextNode(langName))
+        //li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('TypeScript')
+    addOptiLanguage('TypeError')
+    addOptiLanguage('ReactJS')
+
+
+
+    //EDIT
+    const secLang = document.querySelector("li:nth-child(2)")
+    //secLang.innerHTML ="mojo"
+    const newli = document.createElement('li')
+    newli.textContent = "Mojo"
+    secLang.replaceWith(newli)
+
+    //EDIT
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>HELLO WORLD</LI>'
+    const thirdLang = document.querySelector("li:nth-child(3)")
+    thirdLang.outerHTML = '<li>HELLO WORLD</LI>'
+
+
+        //R E M O V E
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+
+</script>
+</html>
