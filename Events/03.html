@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> AUr BHai Saheb</h1>
+    <button id ='start'>START</button>
+    <button id='stop'>STOP</button>
+    
+</body>
+<script>
+
+    // const Sudhz = function(){
+    //     console.log("S u d h a n s h u - V e r m a");
+    // }
+    // setTimeout(Sudhz,2000)
+
+    // setTimeout(function(){
+    //     console.log("S u d h a n s h u");  
+    // },2000)
+
+
+
+    // const changetext = function(){
+    //     document.querySelector('h1').innerHTML= "Sab Badhiya Na !!"
+    // }
+    // const changeMe = setTimeout(changetext, 3000)
+    //  //clearTimeout(changeMe)
+
+    // const omg = function(){
+    // document.querySelector('#start').addEventListener('click',function(){
+    //     setInterval(changeMe)
+    //     console.log("started")
+    //     }, 1)
+
+    // document.querySelector('#stop').addEventListener('click',function(){
+    //     clearInterval(changeMe)
+    //     console.log("Stopped");
+        
+    //  })
+     
+
+        // setInterval(function(){
+        // console.log("Sudhanshu", Date.now())
+        // //}, 1000)
+            
+
+        // const timeChange = function(str){
+        //     console.log(str, Date.now());
+            
+        // }
+        //    const setIntervalid = setInterval(timeChange, 1000, "I AM THINKING ABOUT YOU I KNOW YOU ARE SEEING THIS")
+
+        //  clearInterval(setIntervalid)  
+
+
+
+
+
+    // const Sudhz = function(){
+    //     console.log("S u d h a n s h u - V e r m a");
+    // }
+    // setTimeout(Sudhz,2000)
+
+    // setTimeout(function(){
+    //     console.log("S u d h a n s h u");  
+    // },2000)
+
+ let intervalId;
+
+function changeText() {
+    document.querySelector("h1").innerHTML = "Sab Badhiya Na !!";
+  }
+
+  document.querySelector("#start").addEventListener("click", function () {
+    // prevent multiple intervals
+    if (!intervalId) {
+      intervalId = setInterval(changeText, 1000);
+      console.log("Started");
+    }
+  });
+
+  document.querySelector("#stop").addEventListener("click", function () {
+    clearInterval(intervalId);
+    intervalId = null;
+    console.log("Stopped");
+  });
+
+</script>
+</html> 
