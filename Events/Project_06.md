@@ -1,4 +1,5 @@
-# PROJECT
+# PROJECT 06
+# KEYBOARD
 
 ### JavaScript
 ```javascript
