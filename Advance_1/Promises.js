@@ -86,15 +86,47 @@ const promiseFive = new Promise  (function(resolve, reject){
         if (!error){
             resolve({username: 'Dekh lo Kisne Roka Hai', password: '12345'})
         } else {
-            reject('ERROR: Something Went Wrong')
+            reject('ERROR: Js Not Run!!! ')
         }
     }, 1000)
 })
 
 async function consumePromiseFive(){
-    const response = await promiseFive
-    console.log(response);
+    try{
+        const repsonse = await promiseFive
+        console.log(response);
+    } catch(error) {
+        console.log(error);
+        
+    };
+    
+    // const response = await promiseFive
+    // console.log(response);
     
 }
 consumePromiseFive()
  
+
+
+// async function getAllUsers(){
+    
+//     try{
+//         const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+//         const data = await response.json()
+//         console.log(data);
+//     } catch (error) {
+//         console.log("E: ", error);
+    
+//     }
+
+
+//     //   .then(response => response.json())
+//     //   .then(json => console.log(json))
+// }
+
+// getAllUsers()
+
+
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(json => console.log(json))
