@@ -36,3 +36,6 @@ const userOne =new User("Sudhanshu", 12, true)
 const userTwo =new User("Verma", 11, false)
 console.log(userOne);
 console.log(userTwo);
+
+
+/* A constructor in JavaScript is a special function used to create and initialize objects. It sets up object properties and is typically invoked using the new keyword. Constructors allow for the creation of multiple instances with similar properties and methods. */
